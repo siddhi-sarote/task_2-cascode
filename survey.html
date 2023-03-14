@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <!--CSS FILE LINK-->
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                CasCode Internship Task 1
+            </h1>
+            <p id="description">
+                Thank you for giving us this opportunity of internship in CasCode.
+            </p>
+        </header>
+        <form action="" id="survey-form">
+            <!--Text Section-->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!--End of text section-->
+
+            <!--email section-->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your email" required>
+            </div>
+            <!--End of email section-->
+
+            <!--Number section-->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            <!--End of number section-->
+
+            <!--Address section-->
+            <div class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address" required>
+            </div>
+            <!--End of address section-->
+
+            <!--select selection-->
+            <div class="form-group">
+                <p id="quest">Which option describe your current role ? </p>
+                <select name="role" id="dropdown" class="formControl" required>
+                    <option value="" disabled selected>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="job">Job</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!--end of select selection-->
+
+            <!--ratio botton section-->
+            <div class="form-group">
+                <p id="quest">How you come to know about CasCode</p>
+                <label for="">
+                    <input type="radio"
+                    name="source"
+                    value="friends"
+                    class="inputRadio" checked>From your friends
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source"
+                    value="tv-ads"
+                    class="inputRadio">From Teachers
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source"
+                    value="social-media"
+                    class="inputRadio">Social Media
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source"
+                    value="newspaper"
+                    class="inputRadio">Youtube
+                </label>
+                <label for="">
+                    <input type="radio"
+                    name="source"
+                    value="other"
+                    class="inputRadio">Other
+                </label>
+            </div>
+            <!--end of ratio button section-->
+
+            <!--Checkbox section-->
+            <div class="form-group">
+                <p id="quwst">Your Experties are: </p>
+                <label for="">
+                    <input type="checkbox"
+                    name="prefer"
+                    class="checkbox"
+                    value="back-end-dev">Back-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox"
+                    name="prefer"
+                    class="checkbox"
+                    value="front-end dev">Front-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox"
+                    name="prefer"
+                    class="checkbox"
+                    value="app-dev">Android App Developer
+                </label>
+                <label for="">
+                    <input type="checkbox"
+                    name="prefer"
+                    class="checkbox"
+                    value="soft-engineering">Software Engineering
+                </label>
+                <label for="">
+                    <input type="checkbox"
+                    name="prefer"
+                    class="checkbox"
+                    value="back-end-dev">Back-end Developer
+                </label>
+            </div>
+
+            <!--end of checkbox section -->
+
+            <!--Textarea section-->
+            <div class="form-group">
+                <p id="quest">Why you should hire me</p>
+                <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="i am.."></textarea>
+            </div>
+            <!--end of Textarea section-->
+
+            <!--submit button-->
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>
